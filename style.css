@@ -1,0 +1,291 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box }
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 300;
+	font-color: white;	
+}
+
+
+a {
+	text-decoration: none; 	
+	color: white;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*VIDEO*/
+
+.video-container {
+	width: 100%;
+	height: 90vh;
+	overflow: hidden;
+	position: relative;
+}
+
+video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -10;
+}
+
+
+
+/*NAVIGATION TOP*/
+
+.nav-top {
+	padding: 5rem;
+	display: flex;
+	justify-content: space-between;
+	z-index: 20;
+}
+
+.brand {
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+}
+
+.search {
+	flex-basis: 30%;
+	top: 2rem;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+.search a {
+	flex-basis: 100%;
+}
+
+#search-outline {
+	width: 70%;
+	display: inline-block;
+	border-bottom: 1px solid white;
+}
+
+.nav-right {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.nav-right ul {
+	display: flex;
+	align-items: center;
+}
+
+.nav-right ul a:not(last-child) {
+	margin-right: 1rem;
+}
+
+
+
+/*NAVIGATION SIDE*/
+
+.left-navigation {
+	padding-left: 5rem;
+	display: flex;
+	flex-direction: column;
+	z-index: 20;
+}
+
+.left-navigation a {
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	font-weight: 500;
+	width:12rem;	
+}
+
+.left-navigation a:hover {
+	color: #c2c0bf;
+}
+
+
+
+/*SHIPPING INFO*/
+
+.shipping-info {
+	margin: 4rem auto 8rem auto;
+	text-align: right;
+	font-weight: 400;
+}
+
+/*LOOKBOOK*/
+
+.lookbook h2 {
+	text-align: center;
+	font-family: inherit;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 5rem;
+	font-size: 3rem;	  
+}
+
+.lookbook-flex {
+	display: flex;
+	height:500px;
+	margin-bottom: 8rem;
+	overflow: hidden;
+}
+
+.men-lookbook-box,
+.women-lookbook-box,
+.kids-lookbook-box {
+	flex-basis: 33.33333333%;
+	height:500px;
+	backface-visibility: hidden;
+}
+
+.men-lookbook-image,
+.women-lookbook-image,
+.kids-lookbook-image {
+	width: 80%;
+	height: 90%;
+	margin: 5% auto;
+	overflow: hidden;
+	overflow-y: hidden;
+	position: relative;
+}
+
+.lookbook-flex img {
+	width: 120%;
+	transition: all 500ms;
+}
+
+.men-lookbook-image::after,
+.women-lookbook-image::after,
+.kids-lookbook-image::after {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 50;
+	color: white;
+	font-size: 3rem;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	text-align: center; 
+	transition: all 500ms;
+}
+
+.men-lookbook-image::after {
+	content: "MEN";
+}
+
+.women-lookbook-image::after {
+	content: "WOMEN";
+}
+
+.kids-lookbook-image::after {
+	content: "KIDS";
+}
+
+.lookbook-flex img:hover {
+	width: 100%;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+
+.men-lookbook-image:hover::after,
+.women-lookbook-image:hover::after,
+.kids-lookbook-image:hover::after {
+	opacity: 1;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+	text-align: center; 
+}
+
+h3 {
+	font-weight: 400;
+	margin-bottom: 5rem; 
+}
+
+form {
+	margin-bottom: 10rem;
+}
+
+input {
+	text-align: center; 
+}
+
+#email {
+	width: 25%;
+	border-style: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 2rem;
+}
+
+#email:focus {
+	outline: none;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 8rem;
+}
+
+
+.social-media-tabs a,
+.disclaimer a {
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+
+/*
+NOT WORKING
+.social-media-tabs li:not(last-child){
+	margin-right: 5rem;
+}
+*/ 
+
+.social-media-tabs li{
+	margin-right: 5rem;
+}
+
+.social-media-tabs li:last-child{
+	margin-right: 0rem;
+}
+
+.disclaimer {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+.disclaimer li {
+	padding: 0 1rem;
+}
+
+.disclaimer li:last-child {
+	border-left: 1px solid #c2c0bf;
+}
