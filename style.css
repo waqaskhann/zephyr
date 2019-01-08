@@ -23,6 +23,11 @@ body {
 a {
 	text-decoration: none; 	
 	color: white;
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
 }
 
 .container {
@@ -83,6 +88,7 @@ video {
 	border-bottom: 1px solid white;
 }
 
+
 .nav-right {
 	text-transform: uppercase;
 	font-size: 1.2rem;
@@ -99,6 +105,46 @@ video {
 
 
 
+/*SEARCH DISPLAY*/
+.search-area {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.close-btn {
+	color: black;
+	position: absolute;
+	font-size: 2rem;
+	top: 1rem;
+	right: 1.5rem;
+}
+
+#search-area-bar {
+	width: 50%;
+	display: block;
+	border-style: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 2rem;
+	margin-bottom: 4rem;
+	font-size: 3rem;
+	font-weight: 400;
+	font-family: inherit;
+}
+
+#search-area-bar:focus {
+	outline: none;
+}
+
+
+
 /*NAVIGATION SIDE*/
 
 .left-navigation {
@@ -108,18 +154,38 @@ video {
 	z-index: 20;
 }
 
+.left-navigation li{
+	margin-bottom: 1rem;
+}
+
 .left-navigation a {
 	text-transform: uppercase;
-	margin-bottom: 1rem;
+	margin-bottom: 10rem;
 	font-weight: 500;
-	width:12rem;	
+	width:12rem;
 }
 
 .left-navigation a:hover {
 	color: #c2c0bf;
 }
 
+.men-option,
+.women-option,
+.kids-option,
+.accessories-option,
+.shoes-option {
+	margin: 1rem 0 2rem 1rem;
+	font-size: 1.2rem;
+	display: none;
+}
 
+.men-option li,
+.women-option li,
+.kids-option li,
+.accessories-option li,
+.shoes-option li {
+	margin-bottom: 0.8rem;
+}
 
 /*SHIPPING INFO*/
 
@@ -244,6 +310,37 @@ input {
 	outline: none;
 }
 
+.form-extension {
+	margin-top: 5rem;
+	display: none;
+}
+
+.form-gender {
+	margin-right: 2rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+
+.form-gender:nth-of-type(3) {
+	margin-right: 0;
+}
+
+.privacy-sec {
+	margin: 6rem 0;
+	font-size: 1.2rem;
+}
+
+.btn {
+	font-family: inherit;
+	font-size: 1.4rem; 
+	font-weight: 500;
+	text-transform: uppercase; 
+	padding: 1rem 2rem;
+	background-color: transparent;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
 .social {
 	display: flex;
 	justify-content: center;
@@ -257,6 +354,11 @@ input {
 	color: black;
 	text-transform: uppercase;
 	font-size: 1.2rem;
+}
+
+.social-media-tabs a:hover,
+.disclaimer a:hover {
+	border-bottom: 1px solid black;
 }
 
 
@@ -289,3 +391,52 @@ NOT WORKING
 .disclaimer li:last-child {
 	border-left: 1px solid #c2c0bf;
 }
+
+
+
+/*POP UP*/
+
+#privacy-popup,
+#terms-popup,
+#contact-popup {
+	width: 60%;
+	height: 60%;
+	margin: 10% 20%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	position: fixed;
+	z-index: 200;
+	display: none;
+}
+
+.privacy-info,
+.terms-info,
+.contact-info {
+	width: 80%;
+	margin: 5rem auto;
+}
+
+.privacy-info p,
+.terms-info p {
+	margin-bottom: 3rem;
+	text-align: justify;
+}
+
+#number {
+	margin: 1.5rem 0;
+	font-size: 1.8rem; 
+}
+
+.timing,
+.contact-info li {
+	margin-bottom: 1rem;
+}
+
+.contact-info h4 {
+	margin: 2rem 0;
+}
+
+.social-handle {
+	color: black;
+}	
