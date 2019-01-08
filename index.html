@@ -15,29 +15,75 @@
 	<nav class="nav-top">
 		<div class="brand"><a href="#">Zephyr</a></div>
 		<div class="search">
-			<a href="" id="search-label">Search
+			<a id="search-label">Search
 			<span id="search-outline"></span>
 			</a>
 		</div>
 		<div class="nav-right">
 			<ul class="right-navigation">
 				<a href="">Log In</a>
-				<a href="">Contact</a>
+				<a id="contact-us">Contact</a>
 				<a href=""><img src="shopping-bag.svg"></a>
 			</ul>
 		</div>
 	</nav>
 	<div class="nav-left">
 		<ul class="left-navigation">
-			<a href="">Men</a>
-			<a href="">Women</a>
-			<a href="">Kids</a>
-			<a href="">Accessories</a>
-			<a href="">Shoes</a>
+			<li><a id="men-li" class="left-nav-option">Men</a></li>
+				<ul class="men-option">
+					<li><a href="">Outerwear</a></li>
+					<li><a href="">Jackets</a></li>
+					<li><a href="">Shirts</a></li>
+					<li><a href="">Trousers</a></li>
+					<li><a href="">Jeans</a></li>
+					<li><a href="">Knitwear</a></li>
+					<li><a href="">Sweatshirts</a></li>
+					<li><a href="">T-Shirts</a></li>
+				</ul>
+			<li><a id="women-li" class="left-nav-option">Women</a></li>
+				<ul class="women-option">
+					<li><a href="">Coats</a></li>
+					<li><a href="">Jackets</a></li>
+					<li><a href="">Dresses</a></li>
+					<li><a href="">Jumpsuits</a></li>
+					<li><a href="">Shirts/Bluses</a></li>
+					<li><a href="">T-Shirt</a></li>
+					<li><a href="">Knitwear</a></li>
+					<li><a href="">Sweatshirts</a></li>
+					<li><a href="">Trouses</a></li>
+					<li><a href="">Jeans</a></li>
+					<li><a href="">Skirts</a></li>
+				</ul>
+			<li><a id="kids-li" class="left-nav-option">Kids</a></li>
+				<ul class="kids-option">
+					<li><a href="">Girl | 5 - 14 years</a></li>
+					<li><a href="">Boy | 5 - 14 years</a></li>
+					<li><a href="">Baby Girl | 3 months - 4 years</a></li>
+					<li><a href="">Baby Boy | 3 months - 4 years</a></li>
+					<li><a href="">Mini | 0 - 12 months</a></li>
+				</ul>
+			<li><a id="accessories-li" class="left-nav-option">Accessories</a></li>
+				<ul class="accessories-option">
+					<li><a href="">Men</a></li>
+					<li><a href="">Women</a></li>
+					<li><a href="">Kids</a></li>
+				</ul>
+			<li><a id="shoes-li" class="left-nav-option">Shoes</a></li>
+				<ul class="shoes-option">
+					<li><a href="">Men</a></li>
+					<li><a href="">Women</a></li>
+					<li><a href="">Kids</a></li>
+				</ul>
 		</ul>
 	</div>
 	</div>
 </header>
+
+<div class="search-area">
+		<a class="close-btn" id="search-close-btn">X</a>
+		<input type="text" name="search" id="search-area-bar">
+		<button class="btn">Search</button>
+</div>
 
 <div class="shipping-info container">
 	<p>Free shipping on orders over 100€ in Finland and on international orders over 200€</p>
@@ -68,6 +114,22 @@
 	<h3>Join Our Newsletter</h3>
 	<form class="newsletter-form">
 		<input type="email" name="email" id="email" placeholder="Enter your email address here">
+
+		<div class="form-extension">
+			<div class="gender-sec">
+				<input type="checkbox" name="category" value="Men" id="men">
+				<label for="men" class="form-gender">Men</label>
+				<input type="checkbox" name="category" value="Women" id="women">
+				<label for="women" class="form-gender">Women</label>
+				<input type="checkbox" name="category" value="Kids" id="kids">
+				<label for="kids" class="form-gender">Kids</label>
+			</div>
+			<div class="privacy-sec">
+				<input type="checkbox" name="privacy-policy" value="privacy" id="privacy">
+				<label for="privacy">I HAVE READ AND UNDERSTAND THE PRIVACY AND COOKIES POLICY AND AGREE TO RECEIVE<br>PERSONALISED COMMERCIAL COMMUNICATIONS FROM ZEPHYR BY EMAIL.</label>
+			</div>
+			<button class="btn">Subscribe</button>
+		</div>
 	</form>
 	<div class="social-media-tabs">
 		<ul class="social">
@@ -80,10 +142,61 @@
 	</div>
 	<div class="disclaimer-area">
 		<ul class="disclaimer">
-			<li><a href="">Privacy Policy</a></li>
-			<li><a href="">Terms of Use</a></li>
+			<li><a id="privacy-policy">Privacy Policy</a></li>
+			<li><a id="terms-of-use">Terms of Use</a></li>
 		</ul>
 	</div>
 </footer>
+
+<div id="privacy-popup">
+	<a class="close-btn" id="privacy-close-btn">X</a>
+	<div class="privacy-info">
+		<h3>Privacy Policy</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+
+<div id="terms-popup">
+	<a class="close-btn" id="terms-close-btn">X</a>
+	<div class="terms-info">
+		<h3>Terms & Conditions</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+
+<div id="contact-popup">
+	<a class="close-btn" id="contact-close-btn">X</a>
+	<div class="contact-info">
+		<h3>Customer Services</h3>
+		<h4>Telephone</h4>
+		<p id="number">045 212 1212</p>
+		<p class="timing">Monday to Friday from 8:30 am to 7:30 pm</p>
+		<p class="timing">Saturday from 10:00 am to 4:00 pm</p>
+
+		<hr>
+
+		<h4>Social Media</h4>
+		<ul>
+		<li><a href="" class="social-handle">Zephyr</a></li>
+		<li><a href="" class="social-handle">@Zephyr</a></li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="query.js"></script>
 </body>
 </html>
