@@ -1,0 +1,489 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box }
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 300;
+	color: black;	
+}
+
+
+a {
+	text-decoration: none; 	
+	cursor: pointer;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/*NAVIGATION TOP*/
+
+.nav-top {
+	padding: 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.brand a{
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	color: black !important;
+}
+
+.search {
+	flex-basis: 30%;
+	top: 2rem;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	z-index: 500;
+	color: black;
+}
+
+.search a {
+	flex-basis: 100%;
+}
+
+#search-outline {
+	width: 70%;
+	display: inline-block;
+	border-bottom: 1px solid black;
+}
+
+
+.nav-right {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.nav-right ul {
+	display: flex;
+	align-items: center;
+}
+
+.nav-right ul a:not(last-child) {
+	margin-right: 1rem;
+}
+
+
+
+/*SEARCH DISPLAY*/
+.search-area {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	display: none;
+}
+
+.close-btn {
+	color: black;
+	position: absolute;
+	font-size: 2rem;
+	top: 1rem;
+	right: 1.5rem;
+}
+
+#search-area-bar {
+	width: 50%;
+	display: block;
+	border-style: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 2rem;
+	margin-bottom: 4rem;
+	font-size: 3rem;
+	font-weight: 400;
+	font-family: inherit;
+}
+
+#search-area-bar:focus {
+	outline: none;
+}
+
+
+/*LOGIN POPUP*/
+
+#login-popup {
+	position: absolute;
+	width: 20%;
+	top: 8.5rem;
+	right: 1rem;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 2px;
+	display: none;
+}
+
+#login-close-btn {
+	font-size: 1.3rem;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#login-popup h3 {
+	margin: 3rem 0 1rem 0;
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+#login-popup form {
+	margin-bottom: 3rem;
+}
+
+#login-email,
+#password {
+	width: 100%;
+	display: block;
+	border-style: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	padding-bottom: .5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-family: inherit;
+	text-align: left;
+}
+
+#email-label,
+#password-label {
+	visibility: hidden;
+	transform: scale(0);
+}
+
+#login-popup .btn {
+	margin: 2rem 0 0 0;
+} 
+
+#login-popup h4 {
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+#register {
+	color: black;
+	font-size: 1.5rem;
+	border-bottom: 1px solid black; 
+}
+
+
+
+/*PRIMARY PRODUCT NAVIGATION*/
+
+.product-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-nav-m {
+	background-color: #F8F8F8;
+	border-radius: 2px;
+}
+
+.product-nav-s {
+	background-color: #181818;
+	border-radius: 2px;
+	display: none;
+}
+
+.nav-main{
+	padding: 2rem 0; 
+	color: black;
+	text-transform: uppercase;
+}
+
+.nav-secondary{
+	padding: 1.6rem 0; 
+	color: black;
+	text-transform: uppercase;
+}
+
+.nav-main a {
+	padding: 2rem;
+	font-weight: 400;
+}
+
+.nav-secondary a {
+	padding: 1.6rem;
+	font-weight: 400;
+}
+
+.nav-main:hover {
+	background-color: black;
+	color: white;
+}
+
+.nav-secondary:hover,
+.nav-secondary:active {
+	background-color: white;
+}
+
+.nav-secondary:hover a {
+	color: black !important;
+}
+
+.nav-secondary a {
+	color: white;
+	font-size: 1.4rem;
+}
+
+.product-nav-main,
+.product-nav-secondary {
+	display: flex;
+	flex-direction: row;
+}
+
+.men-secondary,
+.women-secondary,
+.kids-secondary,
+.accessories-secondary,
+.shoes-secondary {
+
+	display: none;
+}
+
+
+
+/*PRODUCT GRID*/
+
+.product-display {
+	margin: 5rem auto 10rem auto;
+
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 3rem 6rem;
+	overflow: hidden;
+	margin-bottom: 5rem;
+}
+
+.product .img img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.product {
+	display: flex;
+	text-align: center;
+}
+
+.product-name {
+	font-family: inherit;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: black;
+	margin-bottom: 1rem; 
+}
+
+.price {
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: black;
+}
+
+.page-control {
+	display: flex;
+	justify-content: center;
+}
+
+.page-control li:nth-of-type(2) {
+	margin: 0 5rem;
+}
+
+.page-control i{
+	color:black;
+}
+
+/*FOOTER*/
+
+.footer {
+	text-align: center; 
+}
+
+h3 {
+	font-weight: 400;
+	margin-bottom: 5rem; 
+}
+
+form {
+	margin-bottom: 10rem;
+}
+
+input {
+	text-align: center; 
+}
+
+#email {
+	width: 25%;
+	border-style: none;
+	border-bottom: 1px solid black;
+	padding-bottom: 2rem;
+}
+
+#email:focus {
+	outline: none;
+}
+
+.form-extension {
+	margin-top: 5rem;
+	display: none;
+}
+
+.form-gender {
+	margin-right: 2rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+
+.form-gender:nth-of-type(3) {
+	margin-right: 0;
+}
+
+.privacy-sec {
+	margin: 6rem 0;
+	font-size: 1.2rem;
+}
+
+.btn {
+	font-family: inherit;
+	font-size: 1.4rem; 
+	font-weight: 500;
+	text-transform: uppercase; 
+	padding: 1rem 2rem;
+	background-color: transparent;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 8rem;
+}
+
+
+.social-media-tabs a,
+.disclaimer a {
+	color: black;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.social-media-tabs a:hover,
+.disclaimer a:hover {
+	border-bottom: 1px solid black;
+}
+
+
+/*
+NOT WORKING
+.social-media-tabs li:not(last-child){
+	margin-right: 5rem;
+}
+*/ 
+
+.social-media-tabs li{
+	margin-right: 5rem;
+}
+
+.social-media-tabs li:last-child{
+	margin-right: 0rem;
+}
+
+.disclaimer {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin-bottom: 2rem;
+}
+
+.disclaimer li {
+	padding: 0 1rem;
+}
+
+.disclaimer li:last-child {
+	border-left: 1px solid #c2c0bf;
+}
+
+
+
+/*POP UP*/
+
+#privacy-popup,
+#terms-popup,
+#contact-popup {
+	width: 60%;
+	height: 60%;
+	margin: 10% 20%;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	position: fixed;
+	z-index: 200;
+	display: none;
+}
+
+.privacy-info,
+.terms-info,
+.contact-info {
+	width: 80%;
+	margin: 5rem auto;
+}
+
+.privacy-info p,
+.terms-info p {
+	margin-bottom: 3rem;
+	text-align: justify;
+}
+
+#number {
+	margin: 1.5rem 0;
+	font-size: 1.8rem; 
+}
+
+.timing,
+.contact-info li {
+	margin-bottom: 1rem;
+}
+
+.contact-info h4 {
+	margin: 2rem 0;
+	font-family: inherit; 
+}
+
+.social-handle {
+	color: black;
+}	
