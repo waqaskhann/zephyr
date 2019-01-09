@@ -58,6 +58,9 @@ document.querySelector("#contact-us").onclick = function() {
 	document.querySelector("#contact-popup").style.display = "block";
 };
 
+document.querySelector("#login").onclick = function() {
+	document.querySelector("#login-popup").style.display = "block";
+};
 
 document.querySelector("#search-close-btn").onclick = function() {
 	document.querySelector(".search-area").style.display = "none";
@@ -75,5 +78,6 @@ document.querySelector("#terms-close-btn").onclick = function() {
 	document.querySelector("#terms-popup").style.display = "none";
 };
 
-
-
+document.querySelector("#login-close-btn").onclick = function() {
+	document.querySelector("#login-popup").style.display = "none";
+};
