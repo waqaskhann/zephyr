@@ -144,6 +144,74 @@ video {
 }
 
 
+/*LOGIN POPUP*/
+
+#login-popup {
+	position: absolute;
+	width: 20%;
+	top: 8.5rem;
+	right: 1rem;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 2px;
+	display: none;
+}
+
+#login-close-btn {
+	font-size: 1.3rem;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#login-popup h3 {
+	margin: 3rem 0 1rem 0;
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+#login-popup form {
+	margin-bottom: 3rem;
+}
+
+#login-email,
+#password {
+	width: 100%;
+	display: block;
+	border-style: none;
+	outline: none;
+	border-bottom: 1px solid black;
+	padding-bottom: .5rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	font-family: inherit;
+	text-align: left;
+}
+
+#email-label,
+#password-label {
+	visibility: hidden;
+	transform: scale(0);
+}
+
+#login-popup .btn {
+	margin: 2rem 0 0 0;
+} 
+
+#login-popup h4 {
+	font-family: inherit;
+	font-weight: 300;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+#register {
+	color: black;
+	font-size: 1.5rem;
+	border-bottom: 1px solid black; 
+}
+
 
 /*NAVIGATION SIDE*/
 
@@ -435,6 +503,7 @@ NOT WORKING
 
 .contact-info h4 {
 	margin: 2rem 0;
+	font-family: inherit; 
 }
 
 .social-handle {
