@@ -141,9 +141,9 @@ video {
 .men-lookbook-image,
 .women-lookbook-image,
 .kids-lookbook-image {
-	width: 120%;
-	height: 120%;
-	left: 5%;
+	width: 140%;
+	height: 140%;
+	left: -15%;
 	top: -15%;
 	overflow: hidden;
 }
@@ -151,6 +151,6 @@ video {
 .men-lookbook-image::after,
 .women-lookbook-image::after,
 .kids-lookbook-image::after {
-	left: 38%;
-	bottom: 12%;
+	left: 46%;
+	bottom: 25%;
 }
