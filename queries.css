@@ -1,10 +1,12 @@
 /*DESKTOPS*/
 @media only screen and (max-width: 1200px) {
 
+
 /*VIDEO*/
 video {
 	left: -10%;
 }
+
 
 
 /*LOOKBOOK*/
@@ -124,6 +126,15 @@ video {
 	display: none;
 }
 
+/*FOOTER*/
+
+#email {
+	width: 50%;
+}
+
+.social-media-tabs li{
+	margin-right: 2rem;
+}
 
 
 /*LOOKBOOK*/

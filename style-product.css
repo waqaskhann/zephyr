@@ -45,7 +45,6 @@ li {
 
 .brand a{
 	font-size: 3rem;
-	margin-left: 1.5rem;
 	text-transform: uppercase;
 	letter-spacing: 1rem;
 	color: black !important;
@@ -82,8 +81,13 @@ li {
 	align-items: center;
 }
 
-.nav-right ul a:not(last-child) {
+.nav-right ul a{
 	margin-right: 1rem;
+}
+
+
+.nav-right ul a:last-child {
+	margin-right: 0rem;
 }
 
 
@@ -439,7 +443,9 @@ NOT WORKING
 	border-left: 1px solid #c2c0bf;
 }
 
-
+#terms-of-use {
+	margin-right: 2rem;
+}
 
 /*POP UP*/
 
@@ -447,7 +453,6 @@ NOT WORKING
 #terms-popup,
 #contact-popup {
 	width: 60%;
-	height: 60%;
 	margin: 10% 20%;
 	background-color: white;
 	position: absolute;

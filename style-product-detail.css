@@ -622,7 +622,9 @@ NOT WORKING
 	border-left: 1px solid #c2c0bf;
 }
 
-
+#terms-of-use {
+	margin-right: 2rem;
+}
 
 /*POP UP*/
 
@@ -630,7 +632,6 @@ NOT WORKING
 #terms-popup,
 #contact-popup {
 	width: 60%;
-	height: 60%;
 	margin: 10% 20%;
 	background-color: white;
 	position: absolute;

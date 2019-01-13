@@ -1,0 +1,107 @@
+/*DESKTOPS*/
+@media only screen and (max-width: 1200px) {
+
+
+
+/*SMALL DESKTOPS/BIG TABLETS*/
+@media only screen and (max-width: 992px) {
+
+/*NAV RIGHT*/
+
+.brand {
+	font-size: 2.5rem;
+}
+
+.search {
+	flex-basis: 40%;
+}
+
+
+/*PRODUCT DETAIL*/
+
+.product-detail {
+	flex-direction: column;
+	height: auto;
+}
+
+.product-picture-slider {
+	margin-bottom: 5rem;
+}
+
+/*SIMILAR PRODUCT*/
+
+.product-grid {
+	grid-gap: 5rem;
+}
+
+
+
+
+/*SMALL TABLETS*/
+@media only screen and (max-width: 768px) {
+
+
+
+/*NAV RIGHT*/
+
+.brand {
+	font-size: 2rem;
+}
+
+.search {
+	flex-basis: 50%;
+}
+
+#search-outline {
+	width: 60%;
+}
+
+
+/*GRID*/
+
+.product-grid {
+	grid-gap: 1rem;
+}
+
+
+/*FOOTER*/
+
+#email {
+	width: 50%;
+}
+
+.social-media-tabs li{
+	margin-right: 2rem;
+}
+
+/*MOBILE PHONES*/
+@media only screen and (max-width: 576px) {
+
+
+
+/*NAV RIGHT*/
+
+.brand {
+	font-size: 2.5rem;
+}
+
+.search {
+	display: none;
+}
+
+
+.nav-main a {
+	padding: 1.3rem;
+	font-weight: 400;
+}
+
+
+
+
+/*GRID*/
+
+.product-grid {
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 3rem 3rem;
+}

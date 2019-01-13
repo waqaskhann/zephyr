@@ -1,0 +1,51 @@
+/*DESKTOPS*/
+@media only screen and (max-width: 1200px) {
+
+
+
+/*SMALL DESKTOPS/BIG TABLETS*/
+@media only screen and (max-width: 992px) {
+
+.slide:nth-of-type(1) {
+  background-position: 70% 0 ;
+}
+
+.slide:nth-of-type(2) {
+  background-position: 50% 0;
+}
+
+.slide:nth-of-type(3) {
+  background-position: 50% 0;
+}
+
+.slide:nth-of-type(4) {
+  background-position: 60% 0;
+}
+
+
+/*SMALL TABLETS*/
+@media only screen and (max-width: 768px) {
+	.lookbook-tabs {
+	justify-content: flex-end;
+}
+
+/*MOBILE PHONES*/
+@media only screen and (max-width: 576px) {
+
+
+.brand {
+	font-size: 2.5rem;
+	letter-spacing: 1rem;
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+}
+
+.lookbook-tabs {
+	padding: 1.6rem 0;
+}
+
+.lookbook-tabs a {
+	padding: 1.6rem;
+	text-transform: uppercase;
+}
