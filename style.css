@@ -103,6 +103,10 @@ video {
 	margin-right: 1rem;
 }
 
+.nav-right ul a:last-child {
+	margin-right: 0rem;
+}
+
 
 
 /*SEARCH DISPLAY*/
