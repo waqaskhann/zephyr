@@ -77,13 +77,14 @@ video {
 	flex-direction: column;
 	height: auto;
 	width: 70%;
-	margin: 0 auto 10rem auto;
+	margin: 0 auto 7rem auto;
 }
 
 .men-lookbook-box,
 .women-lookbook-box,
 .kids-lookbook-box {
 	height:600px;
+	margin-bottom: 3rem;
 }
 
 .men-lookbook-image,
@@ -116,4 +117,40 @@ video {
 
 .search {
 	display: none;
+}
+
+
+
+/*LOOKBOOK*/
+
+.lookbook-flex {
+	flex-direction: column;
+	height: auto;
+	width: 70%;
+	margin: 0 auto 7rem auto;
+}
+
+.men-lookbook-box,
+.women-lookbook-box,
+.kids-lookbook-box {
+	height:400px;
+	overflow: hidden;
+	margin-bottom: 3rem;
+}
+
+.men-lookbook-image,
+.women-lookbook-image,
+.kids-lookbook-image {
+	width: 120%;
+	height: 120%;
+	left: 5%;
+	top: -15%;
+	overflow: hidden;
+}
+
+.men-lookbook-image::after,
+.women-lookbook-image::after,
+.kids-lookbook-image::after {
+	left: 38%;
+	bottom: 12%;
 }
