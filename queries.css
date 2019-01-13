@@ -1,0 +1,119 @@
+/*DESKTOPS*/
+@media only screen and (max-width: 1200px) {
+
+
+/*LOOKBOOK*/
+
+.men-lookbook-image,
+.women-lookbook-image,
+.kids-lookbook-image {
+	width: 150%;
+	left:-10%;
+}
+
+.men-lookbook-image::after,
+.women-lookbook-image::after,
+.kids-lookbook-image::after {
+	left: 40%;
+}
+
+
+/*SMALL DESKTOPS/BIG TABLETS*/
+@media only screen and (max-width: 992px) {
+
+/*VIDEO*/
+video {
+	left: -20%;
+}
+
+.brand {
+	font-size: 2.5rem;
+}
+
+.search {
+	flex-basis: 40%;
+}
+
+
+/*LOOKBOOK*/
+.men-lookbook-image,
+.women-lookbook-image,
+.kids-lookbook-image {
+	width: 180%;
+	left: -20%;
+}
+
+.men-lookbook-image::after,
+.women-lookbook-image::after,
+.kids-lookbook-image::after {
+	left: 38%;
+}
+
+
+/*SMALL TABLETS*/
+@media only screen and (max-width: 768px) {
+
+/*VIDEO*/
+video {
+	left: -30%;
+}
+
+.brand {
+	font-size: 2rem;
+}
+
+.search {
+	flex-basis: 50%;
+}
+
+#search-outline {
+	width: 60%;
+}
+
+
+/*LOOKBOOK*/
+
+.lookbook-flex {
+	flex-direction: column;
+	height: auto;
+	width: 70%;
+	margin: 0 auto 10rem auto;
+}
+
+.men-lookbook-box,
+.women-lookbook-box,
+.kids-lookbook-box {
+	height:600px;
+}
+
+.men-lookbook-image,
+.women-lookbook-image,
+.kids-lookbook-image {
+	width: 120%;
+	height: 120%;
+	left: 5%;
+	overflow: hidden;
+}
+
+.men-lookbook-image::after,
+.women-lookbook-image::after,
+.kids-lookbook-image::after {
+	left: 38%;
+}
+
+
+/*MOBILE PHONES*/
+@media only screen and (max-width: 576px) {
+
+/*VIDEO*/
+video {
+	left: -90%;
+}
+
+.brand {
+	font-size: 2.5rem;
+}
+
+.search {
+	display: none;
+}
