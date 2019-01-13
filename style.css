@@ -108,7 +108,6 @@ video {
 }
 
 
-
 /*SEARCH DISPLAY*/
 .search-area {
 	width: 100%;
@@ -283,29 +282,29 @@ video {
 	height:500px;
 	margin-bottom: 8rem;
 	overflow: hidden;
+	justify-content: space-around;
 }
 
 .men-lookbook-box,
 .women-lookbook-box,
 .kids-lookbook-box {
-	flex-basis: 33.33333333%;
+	flex-basis: 28%;
 	height:500px;
 	backface-visibility: hidden;
+	overflow: hidden;
 }
 
 .men-lookbook-image,
 .women-lookbook-image,
 .kids-lookbook-image {
-	width: 80%;
-	height: 90%;
+	width: 120%;
+	height: 120%;
 	margin: 5% auto;
-	overflow: hidden;
-	overflow-y: hidden;
 	position: relative;
 }
 
 .lookbook-flex img {
-	width: 120%;
+	width: 110%;
 	transition: all 500ms;
 }
 
@@ -313,8 +312,8 @@ video {
 .women-lookbook-image::after,
 .kids-lookbook-image::after {
 	position: absolute;
-	bottom: 5%;
-	left: 50%;
+	bottom: 25%;
+	left: 42%;
 	transform: translateX(-50%);
 	z-index: 50;
 	color: white;
@@ -464,7 +463,9 @@ NOT WORKING
 	border-left: 1px solid #c2c0bf;
 }
 
-
+#terms-of-use {
+	margin-right: 2rem;
+}
 
 /*POP UP*/
 
